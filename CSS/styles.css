@@ -4,3 +4,13 @@
 body {
     background-color: aliceblue;
 }
+
+#ddMenu {
+    color: white;
+    border-radius: 15%;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    border-radius: 25%;
+}
