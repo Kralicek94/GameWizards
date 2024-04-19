@@ -1,8 +1,8 @@
 # GameWizards
 
 Authors: <br>
---> Kralicek94 - Navbar, Minecraft subpages<br>
---> Ratimozo - Footer, GTA 5 FiveM subpages<br>
+--> Kralicek94 - Navbar, Minecraft subpages, Merging<br>
+--> Ratimozo - Footer, GTA 5 FiveM subpages, Členovia tímu, Logo<br>
 --> Ken123King - Main page content, Rust subpages<br>
---> AdrianZ77 - Main page content, Team Fortress 2 subpages<br>
+--> AdrianZ77 - Main page content, Team Fortress 2 subpages, Ochrana osobných údajov<br>
 --> adybot15 - Main page content, Main page design, Counter-Strike 2 subpages<br>
