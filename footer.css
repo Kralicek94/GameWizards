@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#container{
+    max-width: 1500px;
+    margin: auto;
+}
+#row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+#footer{
+    background-color: #24262b;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+#copyright {
+    color: #ffffff;
+    justify-content: flex-end;
+    text-align: center;
+}
+#footer-col{
+    width: 30%;
+    padding: 0 110px;
+}
+#footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: none;
+    margin-bottom: 35px;
+    font-weight: 500;
+    padding: auto;
+    position: relative;
+}
+#footer-col h4::before{
+    content: '';
+    left: 1;
+    position: absolute;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+#footer-col ul li:not(:last-child){
+    margin-bottom: 5px;
+}
+#footer-col ul li a{
+    font-size: 16px;
+    text-transform: none;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+#footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 4px;
+}
+#footer-col #social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+#footer-col #social-links a:hover{
+    color: #24262b;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+/*responsive*/
+@media(max-width: 1200px){
+    #footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 767px){
+    #footer-col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
