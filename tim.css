@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(230, 9%, 13%);
+}
+#container{
+max-width: 1500px;
+margin: auto; 
+padding: 100px 0;
+}
+#team{
+    padding: 100px 0;
+}
+#team-item{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+}
+#team-item:hover{
+    background-color: rgb(0, 195, 255);
+    transition: 0.3s;
+}
+#team-item + #team-item{
+    border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+}
+#team-item img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    z-index: 1;
+    clip-path: inset(0 0 100% 0);
+}
+#team-item:hover img{
+    clip-path: inset(0);
+    transition: 0.5s;
+}
+#team-item h3{
+    color: hsl(0, 0%, 98%);
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 600;
+}
+#team-item p{
+    color: hsl(0, 0%, 85%);
+    text-transform: capitalize;
+}
+
+ @media (max-width: 767px){
+    #team-items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, ninmax(290px, 1fr));
+        gap: 50px;
+    }
+    #team-item + #team-item{
+        border: none;
+    }
+    #team-item{
+        display: block;
+        padding: 0;
+    }
+    #team-item:hover{
+        background-color: transparent;
+    }
+    #team-item img{
+        position: static;
+        transform: none;
+        clip-path: inset(0);
+        margin-top: 20px;
+        width: 100%;
+    }
+ }
+ @media (max-width: 576px){
+    #team-items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, ninmax(290px, 1fr));
+        gap: 15px;
+    }
+    #team-item + #team-item{
+        border: none;
+    }
+    #team-item{
+        display: block;
+        padding: 0;
+    }
+    #team-item:hover{
+        background-color: transparent;
+    }
+    #team-item img{
+        position: static;
+        transform: none;
+        clip-path: inset(0);
+        margin-top: 0px;
+        width: 100%;
+    }
+ }
