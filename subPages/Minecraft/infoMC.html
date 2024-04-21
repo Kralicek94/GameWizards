@@ -9,6 +9,16 @@
         <link rel="stylesheet" type="text/css" href="https://kralicek94.github.io/GameWizards/CSS/footer.css">
         <link rel="icon" type="image/x-icon" href="https://kralicek94.github.io/GameWizards/pics/GameWizards2.png">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <style>
+            body {
+                background-image: url("images/background.png");
+                background-size: 25px ;
+            }
+            #main {
+                background-color: rgba(54, 54, 54, 0.865);
+            }
+            
+        </style>
     </head>
 
     <body class="bg-dark">
@@ -58,7 +68,7 @@
                               <li><a class="dropdown-item" href="https://kralicek94.github.io/GameWizards/subPages/Minecraft/infoMC.html">Informácie</a></li>
                               <li><hr class="dropdown-divider"></li>
                               <li><a class="dropdown-item" href="https://kralicek94.github.io/GameWizards/subPages/Minecraft/rulesMC.html">Pravidlá</a></li>
-                              <li><a class="dropdown-item" href="https://kralicek94.github.io/GameWizards/subPages/Minecraft/vipMC.html">Server ranky</a></li>
+                              <li><a class="dropdown-item" href="https://kralicek94.github.io/GameWizards/subPages/Minecraft/modpacksMC.html">Modpacky</a></li>
                               <li><a class="dropdown-item" href="https://kralicek94.github.io/GameWizards/subPages/Minecraft/serversMC.html">Servery</a></li>
                           </ul>
                       </li>
@@ -95,10 +105,124 @@
           </div>
       </nav>
           <!--Site specific content begins here-->
-          <div class="container text-white">
+          <div id="main" class="container text-white rounded mb-5">
               <div class="row justify-content-center ">
-                  <div class="col-md-12 border-start border-primary border-end mb-5 rounded">
-                      
+                  <div class="col-md-12 border-start border-primary border-end rounded">
+                    <h1 class="text-center text-warning">Informácie o serveroch</h1>
+                    <p>Vitajte na informáciach o minecaftových serveroch!</p>
+                    <p>Tu sa dozviete o všetkom potrebnom pred navštívením našich Minecraft serverov.</p>
+                    <br>
+                    <h2 class="text-center text-primary">Info o verzii a módoch</h2>
+                    <p>Každý server má vlastný modpack, a tým pádom aj verziu hry, ktoré na ňom bežia. Tieto informácie nájdete v <a class="link-info" href="https://kralicek94.github.io/GameWizards/subPages/Minecraft/serversMC.html">tabuľke serverov</a>.</p>
+                    <p>Vanilla servery nemáme, myslíme si že ich je dosť, bez toho aby sme aj my mali jeden.</p>
+                    <p>Väčšina našich serverov obsahuje veľké množstvo technických módov. Niektoré majú obtiažnosť nastavenú na expert, pri nich je v tabuľke 
+                        zvýraznené že sú to takzvané 'Expert modpacky'.
+                    </p>
+                    <p>Ostatné modpacky sú zamerané buď na exploráciu alebo zlepšenie vanilla minecraftu </p>
+
+                    <h2 class="text-center text-primary">Výber modpackov</h2>
+                    <br>
+                    <div class="container">
+                        <div class="row justify-content-around">
+                            <div class="col-1" style="width: 430px; height: 540px;">
+                                <div class="card shadow-sm">
+                                  <img src="./images/omnifactory.jpeg">
+                                  <div class="card-body">
+                                    <p class="card-text">Omnifactory je modpack na minecraft 1.12.2. Obsahuje najmä technické módy, a jeho hlavná časť je 
+                                        mód nazývaný GregTech Community Edition. Celý modpack je v podstate o tomto móde.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-body-secondary">Obtiažnosť : 5/10 </small>
+                                        <small class="text-body-secondary"><a target="_blank" href="https://www.modpackindex.com/modpack/5505/omnifactory">Zoznam módov</a></small>
+                                        <small class="text-body-secondary"><a target="_blank" class="btn btn-light rounded-round btn-sm mb-1" href="https://www.curseforge.com/minecraft/modpacks/omnifactory"><img class="launcher-icons" src="https://www.modpackindex.com/assets/images/launchers/curseforge.png" width="16" height="16">  CurseForge <i class="icon-new-tab"></i></a></small>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2" style="width: 430px; height: 540px;">
+                                <div class="card shadow-sm">
+                                  <img src="./images/gtnh.png">
+                                  <div class="card-body">
+                                    <p class="card-text">GregTech: New Horizons je pravdepodobne najobtiažnejší modpack v Minecraftovom svete.
+                                        Je hlavne o móde GregTech ale je v ňom aj veľké množstvo magických módov. Jeho obtiažnosť ho robí dokonalým modpackom pre veľa ľudí.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-body-secondary">Obtiažnosť : 9/10</small>
+                                        <small class="text-body-secondary"><a target="_blank" href="https://www.modpackindex.com/modpack/17605/gt-new-horizons">Zoznam módov</a></small>
+                                        <small class="text-body-secondary">
+                                            <a target="_blank" class="btn btn-light rounded-round btn-sm mb-1" href="https://www.curseforge.com/minecraft/modpacks/gt-new-horizons"><img class="launcher-icons" src="https://www.modpackindex.com/assets/images/launchers/curseforge.png" width="16" height="16">  CurseForge <i class="icon-new-tab"></i></a>
+                                    </small>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-3" style="width: 430px; height: 540px;">
+                                <div class="card shadow-sm">
+                                  <img src="./images/gravitas.png">
+                                  <div class="card-body">
+                                    <p class="card-text">All The Mods - Gravitas2 je ďalší modpack s GregTech módom.
+                                        No tento modpack, vďaka módu TerraFirmaCraft, prerába Minecraft od základov. Všetko je ťažšie a náročnejšie.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <small  class="text-body-secondary">Obtiažnosť : 7.5 / 10</small>
+                                      <small class="text-body-secondary"><a target="_blank" href="https://www.modpackindex.com/modpack/74001/all-the-mods-gravitas2">Zoznam módov</a></small>
+                                      <small class="text-body-secondary"><a target="_blank" class="btn btn-light rounded-round btn-sm mb-1" href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-gravitas2"><img class="launcher-icons" src="https://www.modpackindex.com/assets/images/launchers/curseforge.png" width="16" height="16">  CurseForge <i class="icon-new-tab"></i></a></small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-1" style="margin-top: 100px; width: 430px; height: 540px;">
+                                <div class="card shadow-sm">
+                                  <img src="./images/stacia.png">
+                                  <div class="card-body">
+                                    <p class="card-text">Stacia 2 Expret je módpack pre každého, kto chce hrať s technickými módami
+                                        ,ale nechce stráviť prvých 50 hodín získavaním železa. Je v ňom množstvo technických ,ale aj magických módov. 
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <small class="text-body-secondary">Obtiažnosť : 5 / 10</small>
+                                      <small class="text-body-secondary"><a target="_blank" href="https://www.modpackindex.com/modpack/74619/stacia-2-expert">Zoznam módov</a></small>
+                                      <small class="text-body-secondary"><a target="_blank" class="btn btn-light rounded-round btn-sm mb-1" href="https://www.curseforge.com/minecraft/modpacks/stacia-2-expert"><img class="launcher-icons" src="https://www.modpackindex.com/assets/images/launchers/curseforge.png" width="16" height="16">  CurseForge <i class="icon-new-tab"></i></a></small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2" style="margin-top: 100px; width: 430px; height: 540px;">
+                                <div class="card shadow-sm">
+                                  <img src="./images/rlcraft.png">
+                                  <div class="card-body">
+                                    <p class="card-text">RLCraft je módpack, ktorý veľa hráčov označuje ako <span class="text-danger">nefér</span> módpack. 
+                                        Tento módpack prerába minecraft na Souls-Like hru. Pridáva množstvo bossov, zbraní a mechaník.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <small class="text-body-secondary">Obtiažnosť : 8 / 10</small>
+                                      <small class="text-body-secondary"><a target="_blank" href="https://www.modpackindex.com/modpack/4123/rlcraft">Zoznam módov</a></small>
+                                      <small class="text-body-secondary"><a target="_blank" class="btn btn-light rounded-round btn-sm mb-1" href="https://www.curseforge.com/minecraft/modpacks/rlcraft"><img class="launcher-icons" src="https://www.modpackindex.com/assets/images/launchers/curseforge.png" width="16" height="16">  CurseForge <i class="icon-new-tab"></i></a></small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-1" style="margin-top: 100px; width: 430px; height: 540px;">
+                                <div class="card shadow-sm">
+                                  <img src="./images/bmc.png">
+                                  <div class="card-body">
+                                    <p class="card-text">Better Minecraft je asi najľahší modpack, na ktorý poskytujeme server. Modpack je zameraný na 
+                                        exploráciu sveta, na stavanie a ceľkovo prerába pocit z Minecraftu na vyšší level
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <small class="text-body-secondary">Obtiažnosť : 3 / 10</small>
+                                      <small class="text-body-secondary"><a target="_blank" href="https://www.modpackindex.com/modpack/25787/better-mc-forge-bmc1">Zoznam módov</a></small>
+                                      <small class="text-body-secondary"><a target="_blank" class="btn btn-light rounded-round btn-sm mb-1" href="https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc1"><img class="launcher-icons" src="https://www.modpackindex.com/assets/images/launchers/curseforge.png" width="16" height="16">  CurseForge <i class="icon-new-tab"></i></a></small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>Toto je naša ponuka. Môžete si vybrať hociktorý server chcete a hrať na ňom ako chcete, samozrejme v rámci pravidiel ;) </p>
                   </div>
               </div>   
           </div>
