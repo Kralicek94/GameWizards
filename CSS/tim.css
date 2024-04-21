@@ -9,9 +9,9 @@ body{
     background-color: hsl(230, 9%, 13%);
 }
 #container{
-max-width: 1500px;
+max-width: 1100px;
 margin: auto; 
-padding: 100px 0;
+padding: 15px 0;
 }
 #team{
     padding: 1px 0;
