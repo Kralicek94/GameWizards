@@ -15,9 +15,6 @@ html{
     color: white;
     font-size: 25px;
 }
-#container ul {
-    padding: 15px;
-}
 /*responsive*/
 @media (max-width: 1200px) {
     #gotopbtn {
