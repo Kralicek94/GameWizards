@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    background-image: url(vip\ background.jpg);
+    -webkit-tap-highlight-color: transparent;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+  
+  address, article, aside, div, footer, header, hgroup, main, nav, search, section {
+    display: block;
+  }
+  
+  h1 {
+color: #ffee02;
+  }
+
+  h2{
+    color: #f8a27b;
+  }
+
+h3{
+  color: white;
+}
+
+.vyhody{
+  color: white;
+}
+
+h4{
+  color: #ffee02;
+  font-size: 20px
+}
+
+  @media screen and (max-width:768px) {
+    .container {
+      max-width: 800px!important;
+    }
+  }
+  
+  
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    width: 85%;
+    padding-right: 300px;
+    padding-left: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+
+  
+
+
+.mb-0 {
+    margin-bottom: 0!important;
+  }
+  
+  @media screen and (max-width:991px) {
+    .box.is__big {
+      padding: 20px!important;
+    }
+  }
+  
+  .box.is__big {
+    padding: 20px!important;
+  }
+  .box {
+    background: #1c1f2c;
+    border: solid 1px #262a3a;
+  }
+  
+  .box {
+    background: #428899;
+    border: solid 1px #f8a27b;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 17px 13px 0 #192c4b05;
+    box-shadow: 0 17px 13px 0 #192c4b05;
+    display: block;
+    background-color:#00000098;
+  }
+  
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+
+
+.table1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.th1 {
+  text-align: left;
+  padding: 8px;
+  background-color: #b6ac21;
+} 
+
+
+.td1 {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid yellow;
+}
+
+.title {
+  color: rgb(0, 255, 42);
+}
+
+.table, .td, .th {
+  border: 1px solid #b6ac21;
+}
+
+.th {
+  font-size: 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tdS{
+  color: #b1cac9bd;
+}
+
+.tdG{
+  color: #ffee00;
+}
+
+.tdP{
+  color: #00c3ff;
+}
+
+.tdD {
+  color: #cc00ff;
+}
