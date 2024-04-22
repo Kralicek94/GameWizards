@@ -14,3 +14,7 @@ body {
     background-color: white;
     border-radius: 25%;
 }
+
+ul {
+    padding-left: 0rem;
+}
