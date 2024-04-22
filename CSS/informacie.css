@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: hsl(230, 9%, 13%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-image: url('imgs/gta7.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+#title h1{
+    text-align: center;
+    background-image: linear-gradient(to right, #ffffff 50%, #000000 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 1000;
+    padding-top: 160px;
+    font-size: 42px;
+}
+#title p{
+    text-align: center;
+    color: #ffd3d3;
+}
+#title h1::after{
+    content: "";
+    height: 4px;
+    width: 230px;
+    background-color: hsl(230, 9%, 13%);
+    display: block;
+    margin: auto;
+}
+#services{
+    width: 85%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+#card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 20px 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+#card:hover{
+    background-color: #b8d4de;
+    transition: 0.3s ease;
+}
+#card h2{
+    font-size: 28px;
+    text-align: center;
+    background-image: linear-gradient(to right, #3b27eb 50%, #000000 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+#card p{
+    font-size: 17px;
+    background-image: linear-gradient(to right, #3b27eb 50%, #000000 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 1000;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+#button{
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 1000;
+    background-color: teal;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#button:hover{
+    background-color: aqua;
+    transition: 0.3s ease;
+}
+
+/*responsive*/
+@media screen and (max-width: 1200px) {
+    #services{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #card{
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #services{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #card{
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+}

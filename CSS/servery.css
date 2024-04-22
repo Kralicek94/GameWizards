@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(230, 9%, 13%);
+    color: white;
+    margin: 0;
+    background-image: url('imgs/gtabg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+#blog-area {
+    position: relative;
+    border: 1px solid #ffffff;
+    width: 80%;
+    padding: 10px;
+}
+
+#primary-bg {
+    background-color: #e6e6e6;
+}
+
+#blog-list-post-content {
+    background-color: rgba(36, 38, 43, 0.9);
+    padding: 20px;
+}
+
+#row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+}
+
+h2, h1, h5 {
+    text-align: center;
+    background-image: linear-gradient(to right, #30c93d 50%, #ffffff 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 1000;
+}
+h3{
+    text-align: left;
+    background-image: linear-gradient(to left, #30c93d 65%, #ffffff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 1000;
+    background-position: left;
+}
+#customers {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th{
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){ background-color: rgba(36, 38, 43, 0.9);}
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+  }
+
+/*responsive*/
+@media (max-width: 1200px) {
+    #blog-area {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    #blog-area {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
