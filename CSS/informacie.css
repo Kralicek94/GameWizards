@@ -10,7 +10,7 @@ body{
     background-color: hsl(230, 9%, 13%);
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-image: url('imgs/gta7.jpg'); 
+    background-image: url('https://kralicek94.github.io/imgs/gta7.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat;
 }
