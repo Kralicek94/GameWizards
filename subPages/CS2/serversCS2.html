@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Counter-Strike 2 - Servery</title>
+    <link rel="icon" type="image/x-icon" href="https://kralicek94.github.io/GameWizards/pics/GameWizards2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://kralicek94.github.io/GameWizards/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://kralicek94.github.io/GameWizards/CSS/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            background-image: url("CS2 Images\ServeryBackground.jpg");
+            background-size: 25px;
+        }
+        #main {
+            background-color: rgba(41, 31, 2, 0.865);
+        }
+        /* Modified CSS for login box */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(41, 31, 2, 0.865);
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: rgba(41, 31, 2, 0.865);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(158, 200, 171, 0.865);
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        form {
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="password"] {
+            margin: 10px;
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: rgba(73, 169, 103, 0.865); /* Set button background color */
+            color: white; /* Set text color to white */
+        }
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            color: white; /* Set placeholder text color to white */
+        }
+        input[type="submit"] {
+            margin: 10px;
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: rgba(3, 63, 21, 0.865);
+            color: rgb(255, 255, 255); /* Set button text color*/
+        }
+        input[type="submit"]:hover {
+            background-color: rgba(3, 63, 21, 0.865);
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark shadow-lg p-3 mb-5 rounded">
+        <div class="container-fluid">
+            <div style="margin-left: 5%;">
+                <a class="navbar-brand" style="width: 80px;" href="https://kralicek94.github.io/GameWizards/index.html">
+                    <img style="width: 200px; height: 80px;" src="https://kralicek94.github.io/GameWizards/pics/GameWizards1.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Dropdown menus -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Site specific content begins here -->
+    <div class="container text-white">
+        <div class="row justify-content-center">
+            <div id="main" class="col-md-12 border-start border-primary border-end mb-5 rounded">
+                <h1 class="text-center text-warning">Servery hry Counter-Strike 2 (CS2)</h1>
+                <ol class="list-group list-group-numbered">
+                    <li>Vitajte na našej herné stránke, kde sa stretávajú vášniví hráči z celého sveta! Sme hrdí na to, že ponúkame výnimočné herné prostredie s množstvom serverov pre rôzne hry. S našimi spoľahlivými servermi a aktívnou komunitou hráčov vám garantujeme nezabudnuteľný zážitok. Stačí si vybrať server, ku ktoremu sa chcete pripojiť. Čakáme na vás v hre!</span></li>
+                    <br>
+                    <li>Vytvorenie vlastného servera:</span></li>
+                    <br>
+                    <li><span class="text-info"><a href="https://dathost.net/cs2-server-hosting">Servery 1</a></span></li>
+                    <br>
+                    <li><span class="text-info"><a href="https://www.bisecthosting.com/counter-strike-2-server-hosting?googleads=true&gad_source=1&tm=tt&gclid=Cj0KCQjwlZixBhCoARIsAIC745BbgZtrdUyHAT3RRKCM3I2oy8HAj283qVVW3aAna8qlUw2BZEUWZwoaAjLYEALw_wcB&aaid=adasDYpIFLlR5">Servery 2</a></span></li>
+                    <br>
+                    <li>Pripojenie k existujúcim serverom:</span></li>
+                    <br>
+                    <li><span class="text-info"><a href="https://cs2browser.com/">Vyhladať server</a></span></li>
+                    <br>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login box -->
+    <div class="container">
+        <h1>Prihlásenie na server CS2</h1>
+        <form action="your_server_script.php" method="post">
+            <input type="text" name="username" placeholder="Meno" required><br>
+            <input type="password" name="password" placeholder="Heslo" required><br>
+            <input type="submit" value="Connect">
+        </form>
+    </div>
+    <!-- Site specific content ends here -->
+
+    <iframe scrolling="no" src="https://kralicek94.github.io/GameWizards/footer.html" width="100%" height="211px"></iframe>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
