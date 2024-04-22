@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-image: url('rust.png');
+      background-size: cover;
+      background-position: center;
+    }
+    .transparent-window {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      color: white;
+      width: 80%;
+      margin: 50px auto; /* Zvýšený margin pre väčší odstup od okraja stránky */
+      text-align: right; /* Obsah zarovnaný napravo */
+    }
+    .transparent-window h2 {
+      margin-bottom: 20px;
+      text-align: right; /* Nadpis "Informácie o serveroch" zarovnaný napravo */
+    }
+    .transparent-window a {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="transparent-window">
+      <h2 class="text-end">Informácie o serveroch</h2>
+      <p>
+        Ak ste u nás prvýkrát, prečítajte si rýchle info, aby ste sa o nás dozvedeli viac.
+      </p>
+      <h3>O hre</h3>
+      <p>
+        Rust je prežitie na otvorenom svete hra, kde hráči musia prežiť tvrdé podmienky tým, že zbierajú zdroje,
+        stavajú domy a súperia s ostatnými hráčmi. Môžete si stiahnuť hru z oficiálnej stránky na <a
+          href="https://store.steampowered.com/app/252490/Rust/" target="_blank">Steam</a>.
+      </p>
+      <h3>Ostatné</h3>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/vip.html" target="_blank">VIP</a> - Kúpte si VIP balík pre vylepšené
+          herné skúsenosti.</li>
+        <li><a href="http://127.0.0.1:5500/servery.html" target="_blank">Servery</a> - Prehľad dostupných
+          serverov.</li>
+        <li><a href="http://127.0.0.1:5500/pravidla.html" target="_blank">Pravidlá</a> - Prečítajte si pravidlá
+          serveru a kontaktujte nás.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
