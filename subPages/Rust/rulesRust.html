@@ -136,46 +136,77 @@
                         </div>
                       
                       
-                      <h3 class="text-center">Nahlásenie:</h3>
-                      
-                      
-                      
-                      
-                      <div class="row justify-content-center">
-                      <div class="col-md-6">
-                      <div class="form-area">
-                      <div class="container">
-                      
-                            <h2 class="text-center"></h2>
-                              
-                            <form>
-                                <div class="mb-3">
-                                  <label for="exampleInputName" class="form-label light-text">In-game meno</label>
-                                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
-                                </div>
-                      
-                                <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label light-text">Emailová adresa</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                </div>
-                      
-                                <div class="mb-3">
-                                  <label for="exampleInputMessage" class="form-label light-text">Správa</label>
-                                  <textarea class="form-control" id="exampleInputMessage" rows="5"></textarea>
-                                </div>
-                      
-                                <div class="mb-3 text-center">
-                                  <button type="submit" class="btn btn-primary" style="background-color: rgba(0, 0, 0, 0.5); border-color: rgba(0, 0, 0, 0.5);">Odoslať</button>
-                                </div>
-                      
-                            </form>
-                      </div>
-                      </div>
-                      </div>
-                      </div>  
-                  </div>
-              </div>   
-          </div>
+                        <h3 class="text-center">Nahlásenie:</h3>
+                    
+                    
+                    
+                    
+                        <div class="row justify-content-center">
+                        <div class="col-md-6">
+                        <div class="form-area">
+                        <div class="container">
+                        
+                              <h2 class="text-center"></h2>
+                                
+                              <form>
+                                  <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label light-text">In-game meno</label>
+                                    <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+                                  </div>
+                        
+                                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label light-text">Emailová adresa</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  </div>
+                        
+                                  <div class="mb-3">
+                                    <label for="exampleInputMessage" class="form-label light-text">Správa</label>
+                                    <textarea class="form-control" id="exampleInputMessage" rows="5"></textarea>
+                                  </div>
+                        
+                                  <div class="mb-3 text-center">
+                                    <button type="submit" class="btn btn-primary" style="background-color: rgba(0, 0, 0, 0.5); border-color: rgba(0, 0, 0, 0.5);">Odoslať</button>
+                                  </div>
+                        
+                              </form>
+                        </div>
+                        </div>
+                        </div>
+                        </div>  
+                    </div>
+                </div>   
+            </div>
+    
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    document.querySelector('form').addEventListener('submit', function (event) {
+                        var inGameMeno = document.getElementById('exampleInputName').value.trim();
+                        var email = document.getElementById('exampleInputEmail1').value.trim();
+                        var sprava = document.getElementById('exampleInputMessage').value.trim();
+            
+                        if (inGameMeno === '') {
+                            alert('Prosím, vyplňte In-game meno.');
+                            event.preventDefault();
+                            return;
+                        }
+            
+                        if (email === '') {
+                            alert('Prosím, vyplňte emailovú adresu.');
+                            event.preventDefault();
+                            return;
+                        }
+            
+                        if (sprava === '') {
+                            alert('Prosím, vyplňte správu.');
+                            event.preventDefault();
+                            return;
+                        }
+                    });
+                });
+            </script>
+
+
+
           <!--Site specific content ends here-->
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       </body>
