@@ -11,26 +11,73 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
 body {
-            background-image: url('rust.png'); 
+            background-image: url("imgs/rust.png"); 
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            padding-top: 50px;
-            margin: 0; 
+            
         }
 
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000; 
+        .pricing-area {
+            padding: 3% 0;
+            text-align: center;
         }
 
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            z-index: 1000; 
+        .single-pricing {
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            transition: all .5s ease;
+            color: white;
+            margin-bottom: 30px;
+            padding: 20px; 
+        }
+
+        .deal-type {
+            background: none;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: 900;
+            color: white;
+        }
+
+        .deal-amount {
+            background: none;
+            padding: 25px 0;
+            color: white;
+        }
+
+        .price .money {
+            font-size: 60px;
+            font-weight: 900;
+        }
+
+        .price .money sup {
+            font-size: 40px;
+            font-weight: 500;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        .single-deal {
+            padding: 15px 0;
+            list-style: none;
+        }
+
+
+
+        .btn {
+            background: black;
+            border: none;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 10px 50px;
+            color: #fff;
+        }
+
+        @media (max-width: 767px) {
+            .single-pricing {
+                margin-bottom: 30px;
+            }
         }
 
 
