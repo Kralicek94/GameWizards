@@ -1,6 +1,6 @@
 body {
-    font-family: var(--bs-font-sans-serif);
-    background-image: url("https://kralicek94.github.io/GameWizards/subPages/TF2/background.jpg");
+    font-family: 'Poppins', sans-serif;
+    background-image: url("https://kralicek94.github.io/GameWizards/subPages/TF2/vipbackground.jpg");
     min-height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;  

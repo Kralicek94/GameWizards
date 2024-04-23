@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(3, 63, 21, 0.865);
+    }
+    .container {
+        width: 80%;
+        margin: 50px auto;
+        background-color: rgba(3, 63, 21, 0.865); 
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(3, 63, 21, 0.865);
+    }
+    h1 {
+        text-align: center;
+    }
+    form {
+        text-align: center;
+    }
+    input[type="text"],
+    input[type="password"] {
+    color: white;
+    
+    }
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder {
+    color: white;
+    }   
+
+
+    input[type="text"], input[type="password"], input[type="submit"] {
+        margin: 10px;
+        padding: 8px 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: rgba(0, 0, 0, 0.865); /* Set text color */
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: rgba(3, 63, 21, 0.865);
+    }
+</style>
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(230, 9%, 13%);
+    color: white;
+    margin: 0;
+    background-image: url('https://kralicek94.github.io/GameWizards/imgs/cs2main.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#primary-bg {
+    background-color: #e6e6e6;
+}
+
+h2, h1, h5 {
+    text-align: center;
+    background-image: linear-gradient(to right, #30c93d 50%, #ffffff 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 1000;
+}
+h3{
+    text-align: left;
+    background-image: linear-gradient(to left, #30c93d 65%, #ffffff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 1000;
+    background-position: left;
+}
+
