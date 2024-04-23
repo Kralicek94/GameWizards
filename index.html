@@ -17,6 +17,10 @@
             #main {
                 background-color: rgba(54, 54, 54, 0.865);
             }
+
+            html {
+                scroll-behavior: smooth;
+            }
         </style>
     </head>
 
@@ -111,14 +115,14 @@
                       <p>Vitajte na Slovenskom webovom portáli !</p>
                       <p>Vyberte si z ponuky hier a serverov a začnite si užívať s komunitou hráčov.</p>
                       <br>
-                        <h2 class="text-center text-primary">O nás</h2>
+                        <a id="aboutus"><h2 class="text-center text-primary">O nás</h2></a>
                         <p>Sme spolužiaci, ktorý sa zhodli s víziou... spraviť stránku, na ktorej budeme poskytovať komunitné servery.</p>
                         <p>Projekt je uskutočnený vďaka kombinácie Bootstrapu, CSS a HTML mágie.</p>
                         <p>Každý sme sa naučili niečo nové pri vytváraní týchto stránok. Skúsenosti s GitHubom a aj s písaním stránok, ktoré nám pomôžu ku sebazlepšovaniu.</p>
-                        <h2 class="text-primary text-center">Čo ponúkame ?</h2>
+                        <h2 id="services" class="text-primary text-center">Čo ponúkame ?</h2>
                         <p>Na týchto stránkach nájdete naše návrhy webového portálu a jeho podstránok</p>
                         <p>Obsah stránok je rozdelený do skupín a podskupín tak, aby bol celý web prehľadný, funkčný a responzívny</p>
-                        <h2 class="text-center text-primary">O čom je stránka ?</h2>
+                        <h2 id="about" class="text-center text-primary">O čom je stránka ?</h2>
                         <p>Stránky sú obsahovo informačné, teda na čítanie a prípadné kontaktovanie nás, tvorcov.</p>
                         <p>Na stránkach je obsah, ktorý je len ilustračný. Nič sa na stránkach nepredáva, nedistribuuje a ani neposkytuje.</p>
                         <img class="d-block mx-auto" src="./imgs/enjoy.png">
@@ -133,16 +137,16 @@
                     <div id="footer-col">
                         <h4>Stránka</h4>
                         <ul>
-                            <li><a href="#" target="_blank">O nás</a></li>
+                            <li><a href="#aboutus">O nás</a></li>
                             <li><a href="https://kralicek94.github.io/GameWizards/tim.html" target="_blank">Členovia tímu</a></li>
-                            <li><a href="#" target="_blank">Ochrana údajov</a></li>
-                            <li><a href="#" target="_blank">Čo ponúkame?</a></li>
+                            <li><a href="https://kralicek94.github.io/GameWizards/privacy.html">Ochrana údajov</a></li>
+                            <li><a href="#services">Čo ponúkame?</a></li>
                         </ul>
                     </div>
                     <div id="footer-col">
                         <h4>Pomoc</h4>
                         <ul>
-                            <li><a href="#" target="_blank">O čom je stránka?</a></li>
+                            <li><a href="#about" target="_blank">O čom je stránka?</a></li>
                             <li><a href="https://discord.gg/3ReUgS7r"target="_blank">Kontakt</a></li>
                         </ul>
                     </div>
