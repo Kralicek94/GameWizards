@@ -1,12 +1,6 @@
 body {
-    margin: 0;
     font-family: var(--bs-font-sans-serif);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #ffffff;
-    background-image: url(vip\ background.jpg);
-    -webkit-tap-highlight-color: transparent;
+    background-image: url("https://kralicek94.github.io/GameWizards/subPages/TF2/background.jpg");
     min-height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;  
@@ -43,20 +37,6 @@ h4{
       max-width: 800px!important;
     }
   }
-  
-  
-  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    --bs-gutter-x: 1.5rem;
-    width: 85%;
-    padding-right: 300px;
-    padding-left: 300px;
-    margin-right: auto;
-    margin-left: auto;
-    
-  }
-
-  
-
 
 .mb-0 {
     margin-bottom: 0!important;
