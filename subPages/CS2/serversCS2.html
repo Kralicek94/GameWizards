@@ -29,7 +29,8 @@
             text-align: center;
         }
         input[type="text"],
-        input[type="password"] {
+        input[type="password"],
+        input[type="email"] {
             margin: 10px;
             padding: 8px 15px;
             border: 1px solid #ccc;
@@ -39,7 +40,8 @@
             color: white; /* Set text color to white */
         }
         input[type="text"]::placeholder,
-        input[type="password"]::placeholder {
+        input[type="password"]::placeholder,
+        input[type="email"]::placeholder {
             color: white; /* Set placeholder text color to white */
         }
         input[type="submit"] {
@@ -162,11 +164,12 @@
         </div>
     </div>
 
-    <!-- Login box -->
+    <!-- Login and email box -->
     <div id="container">
         <h1 class="text-primary text-center">Prihlásenie na server CS2</h1>
         <form action="your_server_script.php" method="post">
             <input type="text" name="username" placeholder="Meno" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
             <input type="password" name="password" placeholder="Heslo" required><br>
             <input type="submit" value="Connect">
         </form>
