@@ -56,6 +56,10 @@
         input[type="submit"]:hover {
             background-color: rgba(3, 63, 21, 0.865);
         }
+        .checkbox-container {
+            text-align: center;
+            color: white; /* Set checkbox text color to white */
+        }
     </style>
 </head>
 <body class="bg-dark">
@@ -164,13 +168,17 @@
         </div>
     </div>
 
-    <!-- Login and email box -->
+    <!-- Login box -->
     <div id="container">
         <h1 class="text-primary text-center">Prihlásenie na server CS2</h1>
         <form action="your_server_script.php" method="post">
             <input type="text" name="username" placeholder="Meno" required><br>
-            <input type="email" name="email" placeholder="Email" required><br>
             <input type="password" name="password" placeholder="Heslo" required><br>
+            <input type="email" name="email" placeholder="E-mail" required><br>
+            <div class="checkbox-container">
+                <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+                <label for="newsletter">Dostávať novinky na email</label>
+            </div>
             <input type="submit" value="Connect">
         </form>
     </div>
