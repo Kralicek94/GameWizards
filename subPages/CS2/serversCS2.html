@@ -30,7 +30,8 @@
         }
         input[type="text"],
         input[type="password"],
-        input[type="email"] {
+        input[type="email"],
+        input[type="range"] {
             margin: 10px;
             padding: 8px 15px;
             border: 1px solid #ccc;
@@ -55,10 +56,6 @@
         }
         input[type="submit"]:hover {
             background-color: rgba(3, 63, 21, 0.865);
-        }
-        .checkbox-container {
-            text-align: center;
-            color: white; /* Set checkbox text color to white */
         }
     </style>
 </head>
@@ -151,7 +148,8 @@
             <div id="main" class="col-md-12 border-start border-primary border-end mb-5 rounded">
                 <h1 class="text-center text-warning">Servery hry Counter-Strike 2 (CS2)</h1>
                 <ol class="list-group list-group-numbered">
-                    <li>Vitajte na našej herné stránke, kde sa stretávajú vášniví hráči z celého sveta! Sme hrdí na to, že ponúkame výnimočné herné prostredie s množstvom serverov pre rôzne hry. S našimi spoľahlivými servermi a aktívnou komunitou hráčov vám garantujeme nezabudnuteľný zážitok. Stačí si vybrať server, ku ktoremu sa chcete pripojiť. Čakáme na vás v hre!</span></li>
+                    <br>
+                    <li>Vitajte na našej hernj stránke, kde sa stretávajú vášniví hráči z celého sveta! Sme hrdí na to, že ponúkame výnimočné herné prostredie s množstvom serverov pre rôzne hry. S našimi spoľahlivými servermi a aktívnou komunitou hráčov vám garantujeme nezabudnuteľný zážitok. Stačí si vybrať server, ku ktoremu sa chcete pripojiť. Čakáme na vás v hre!</span></li>
                     <br>
                     <li>Vytvorenie vlastného servera:</span></li>
                     <br>
@@ -174,11 +172,12 @@
         <form action="your_server_script.php" method="post">
             <input type="text" name="username" placeholder="Meno" required><br>
             <input type="password" name="password" placeholder="Heslo" required><br>
-            <input type="email" name="email" placeholder="E-mail" required><br>
-            <div class="checkbox-container">
-                <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
-                <label for="newsletter">Dostávať novinky na email</label>
-            </div>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <label for="age" style="color: white;">Vek:</label><br>
+            <input type="range" id="age" name="age" min="15" max="99" value="15" oninput="document.getElementById('ageValue').innerText = this.value;"><br>
+            <span id="ageValue" style="color: white;">15</span><br>
+            <input type="checkbox" id="newsletter" name="newsletter" value="novinky">
+            <label for="newsletter" style="color: white;">Dostávať novinky na email</label><br>
             <input type="submit" value="Connect">
         </form>
     </div>
