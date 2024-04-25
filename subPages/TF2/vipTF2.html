@@ -478,6 +478,59 @@
        <!--Site specific content ends here-->
           
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+                                  const form = document.querySelector('form');
+  
+                                  form.addEventListener('submit', (e) => {
+                                    e.preventDefault();
+  
+                                    const username = document.querySelector('#username').value;
+                                    const password = document.querySelector('#password').value;
+                                    const email = document.querySelector('#email').value;
+                                    const rank = document.querySelector('#rank').value;
+                                    const content = document.querySelector('#content').value;
+  
+                                    if (username === '' || password === '' || email === '' || rank === '' || content === '') {
+                                      alert('Please fill in all fields');
+                                      return;
+                                    }
+  
+                                    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                                    if (!emailRegex.test(email)) {
+                                      alert('Invalid email format');
+                                      return;
+                                    }
+  
+                                    const formData = new FormData();
+                                    formData.append('username', username);
+                                    formData.append('password', password);
+                                    formData.append('email', email);
+                                    formData.append('rank', rank);
+                                    formData.append('content', content);
+  
+                                    fetch('/submit', {
+                                      method: 'POST',
+                                      body: formData
+                                    })
+                                      .then((response) => {
+                                        if (response.ok) {
+                                          return response.json();
+                                        } else {
+                                          throw new Error('An error occurred while submitting the form');
+                                        }
+                                      })
+                                      .then((data) => {
+                                        console.log(data);
+                                        window.location.href = 'submit.html';
+                                      })
+                                      .catch((error) => {
+                                        console.error(error);
+                                        alert('An error occurred while submitting the form');
+                                      });
+                                  });
+  
+  
+                                </script>
  </body>
    
 </html>
