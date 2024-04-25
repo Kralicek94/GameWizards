@@ -18,7 +18,7 @@
             background-color: rgba(41, 31, 2, 0.865);
         }
         /* Modified CSS for login box */
-        .container {
+        #container {
             width: 80%;
             margin: 50px auto;
             background-color: rgba(41, 31, 2, 0.865);
@@ -29,7 +29,9 @@
             text-align: center;
         }
         input[type="text"],
-        input[type="password"] {
+        input[type="password"],
+        input[type="email"],
+        input[type="range"] {
             margin: 10px;
             padding: 8px 15px;
             border: 1px solid #ccc;
@@ -39,7 +41,8 @@
             color: white; /* Set text color to white */
         }
         input[type="text"]::placeholder,
-        input[type="password"]::placeholder {
+        input[type="password"]::placeholder,
+        input[type="email"]::placeholder {
             color: white; /* Set placeholder text color to white */
         }
         input[type="submit"] {
@@ -145,7 +148,8 @@
             <div id="main" class="col-md-12 border-start border-primary border-end mb-5 rounded">
                 <h1 class="text-center text-warning">Servery hry Counter-Strike 2 (CS2)</h1>
                 <ol class="list-group list-group-numbered">
-                    <li>Vitajte na našej herné stránke, kde sa stretávajú vášniví hráči z celého sveta! Sme hrdí na to, že ponúkame výnimočné herné prostredie s množstvom serverov pre rôzne hry. S našimi spoľahlivými servermi a aktívnou komunitou hráčov vám garantujeme nezabudnuteľný zážitok. Stačí si vybrať server, ku ktoremu sa chcete pripojiť. Čakáme na vás v hre!</span></li>
+                    <br>
+                    <li>Vitajte na našej hernj stránke, kde sa stretávajú vášniví hráči z celého sveta! Sme hrdí na to, že ponúkame výnimočné herné prostredie s množstvom serverov pre rôzne hry. S našimi spoľahlivými servermi a aktívnou komunitou hráčov vám garantujeme nezabudnuteľný zážitok. Stačí si vybrať server, ku ktoremu sa chcete pripojiť. Čakáme na vás v hre!</span></li>
                     <br>
                     <li>Vytvorenie vlastného servera:</span></li>
                     <br>
@@ -163,11 +167,17 @@
     </div>
 
     <!-- Login box -->
-    <div class="container">
+    <div id="container">
         <h1 class="text-primary text-center">Prihlásenie na server CS2</h1>
         <form action="your_server_script.php" method="post">
             <input type="text" name="username" placeholder="Meno" required><br>
             <input type="password" name="password" placeholder="Heslo" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <label for="age" style="color: white;">Vek:</label><br>
+            <input type="range" id="age" name="age" min="15" max="99" value="15" oninput="document.getElementById('ageValue').innerText = this.value;"><br>
+            <span id="ageValue" style="color: white;">15</span><br>
+            <input type="checkbox" id="newsletter" name="newsletter" value="novinky">
+            <label for="newsletter" style="color: white;">Dostávať novinky na email</label><br>
             <input type="submit" value="Connect">
         </form>
     </div>
