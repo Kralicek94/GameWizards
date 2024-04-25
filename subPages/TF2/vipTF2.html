@@ -420,7 +420,30 @@
                          </div> 
                         </div> 
                       </div> 
-      </div> 
+      </div>
+        <br>
+        <div style="width: auto; padding: 20px; margin: 0px auto;">
+  <form>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="rank">Rank:</label><br>
+    <select id="rank" name="rank" required>
+      <option value="">Select rank</option>
+      <option value="gold">Silver</option>
+      <option value="silver">Gold</option>
+      <option value="diamond">Diamond</option>
+      <option value="platinum">Platinum</option>
+    </select><br>
+    <label for="content">Content:</label><br>
+    <textarea id="content" name="content" required></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</div>
       <br>
       <footer id="footer">
         <div id="container">
