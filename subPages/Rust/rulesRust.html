@@ -113,99 +113,124 @@
       </nav>
           <!--Site specific content begins here-->
           <div class="container text-white">
-              <div class="row justify-content-center ">
-                  <div class="col-md-12 border-start border-primary border-end mb-5 rounded">
-                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-                        <div class="rules-container">
+            <div class="row justify-content-center ">
+                <div class="col-md-12 border-start border-primary border-end mb-5 rounded">
+                  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                      <div class="rules-container">
+                        
+                          <h4 id="scrollspyHeading1" class="light-text">Rešpektuj ostatných hráčov:</h4>
+                          <p class="light-text">Buď slušný a rešpektujúci voči ostatným hráčom. Nevyužívaj vulgárne výrazy, rasistické vyjadrenia ani urážky, a to ani v textovom chate ani cez hlasový chat.</p>
                           
-                            <h4 id="scrollspyHeading1" class="light-text">Rešpektuj ostatných hráčov:</h4>
-                            <p class="light-text">Buď slušný a rešpektujúci voči ostatným hráčom. Nevyužívaj vulgárne výrazy, rasistické vyjadrenia ani urážky, a to ani v textovom chate ani cez hlasový chat.</p>
-                            
-                            <h4 id="scrollspyHeading2" class="light-text">Zákaz hackovania a cheaterstva:</h4>
-                            <p class="light-text">Je zakázané používať akékoľvek formy hackovania, cheatovania alebo nečestného správania, ktoré by mohli ovplyvniť herný zážitok ostatných hráčov.</p>
-                            
-                            <h4 id="scrollspyHeading3" class="dark-text">Limit hráčov v tíme:</h4>
-                            <p class="dark-text">Na jednom serveri môže byť v jednom tíme maximálne 5 hráčov. Dodržiavanie tohto limitu pomáha udržať rovnováhu a férový herný zážitok pre všetkých.</p>
-                            
-                            <h4 id="scrollspyHeading4" class="light-text">Zákaz využívania exploitov:</h4>
-                            <p class="light-text">Nepoužívaj žiadne herné chyby ani exploitové techniky na získanie neoprávnenej výhody. Ak tak urobíš, hrozí ti ban.</p>
-                            
-                            <h4 id="scrollspyHeading5" class="light-text">Nahlásenie porušení pravidiel:</h4>
-                            <p class="light-text">Ak si všimneš akékoľvek porušenie týchto pravidiel, neváhaj to nahlásiť administrátorom alebo moderátorom serveru. Spolupráca všetkých hráčov na dodržiavaní pravidiel je kľúčová pre zdravú a bezpečnú hernú komunitu.</p>
-                        </div>
-                        </div>
-                      
-                      
-                        <h3 class="text-center">Nahlásenie:</h3>
+                          <h4 id="scrollspyHeading2" class="light-text">Zákaz hackovania a cheaterstva:</h4>
+                          <p class="light-text">Je zakázané používať akékoľvek formy hackovania, cheatovania alebo nečestného správania, ktoré by mohli ovplyvniť herný zážitok ostatných hráčov.</p>
+                          
+                          <h4 id="scrollspyHeading3" class="dark-text">Limit hráčov v tíme:</h4>
+                          <p class="dark-text">Na jednom serveri môže byť v jednom tíme maximálne 5 hráčov. Dodržiavanie tohto limitu pomáha udržať rovnováhu a férový herný zážitok pre všetkých.</p>
+                          
+                          <h4 id="scrollspyHeading4" class="light-text">Zákaz využívania exploitov:</h4>
+                          <p class="light-text">Nepoužívaj žiadne herné chyby ani exploitové techniky na získanie neoprávnenej výhody. Ak tak urobíš, hrozí ti ban.</p>
+                          
+                          <h4 id="scrollspyHeading5" class="light-text">Nahlásenie porušení pravidiel:</h4>
+                          <p class="light-text">Ak si všimneš akékoľvek porušenie týchto pravidiel, neváhaj to nahlásiť administrátorom alebo moderátorom serveru. Spolupráca všetkých hráčov na dodržiavaní pravidiel je kľúčová pre zdravú a bezpečnú hernú komunitu.</p>
+                      </div>
+                      </div>
                     
                     
-                    
-                    
+                      <div class="container text-white">
                         <div class="row justify-content-center">
                         <div class="col-md-6">
                         <div class="form-area">
                         <div class="container">
-                        
-                              <h2 class="text-center"></h2>
-                                
-                              <form>
-                                  <div class="mb-3">
+                            
+                            
+                            <h2 class="text-center">Nahlásenie</h2>
+                            <form id="reportForm">
+                                <div class="mb-3">
                                     <label for="exampleInputName" class="form-label light-text">In-game meno</label>
                                     <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
-                                  </div>
-                        
-                                  <div class="mb-3">
+                                </div>
+        
+                                <div class="mb-3">
+                                    <label for="exampleInputSteam" class="form-label light-text">Steam meno</label>
+                                    <input type="text" class="form-control" id="exampleInputSteam">
+                                    <div id="steamError" class="invalid-feedback"></div>
+                                </div>
+        
+                                <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label light-text">Emailová adresa</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                  </div>
-                        
-                                  <div class="mb-3">
+                                </div>
+        
+                                <div class="mb-3">
+                                    <label for="exampleInputDovod" class="form-label light-text">Dôvod nahlasenia</label>
+                                    <select class="form-select" id="exampleInputDovod">
+                                        <option selected disabled hidden>Vyberte dôvod nahlásenia</option>
+                                        <option value="Cheating">Cheating</option>
+                                        <option value="Exploiting">Exploiting</option>
+                                        <option value="Nadávanie">Nadávanie</option>
+                                        <option value="Limit hráčov">Limit hráčov</option>
+                                    </select>
+                                </div>
+        
+                                <div class="mb-3">
                                     <label for="exampleInputMessage" class="form-label light-text">Správa</label>
                                     <textarea class="form-control" id="exampleInputMessage" rows="5"></textarea>
-                                  </div>
-                        
-                                  <div class="mb-3 text-center">
+                                </div>
+        
+                                <div class="mb-3 text-center">
                                     <button type="submit" class="btn btn-primary" style="background-color: rgba(0, 0, 0, 0.5); border-color: rgba(0, 0, 0, 0.5);">Odoslať</button>
-                                  </div>
-                        
-                              </form>
+                                </div>
+                            </form>
                         </div>
-                        </div>
-                        </div>
-                        </div>  
                     </div>
-                </div>   
+                </div>
             </div>
-    
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    document.querySelector('form').addEventListener('submit', function (event) {
-                        var inGameMeno = document.getElementById('exampleInputName').value.trim();
-                        var email = document.getElementById('exampleInputEmail1').value.trim();
-                        var sprava = document.getElementById('exampleInputMessage').value.trim();
-            
-                        if (inGameMeno === '') {
-                            alert('Prosím, vyplňte In-game meno.');
-                            event.preventDefault();
-                            return;
-                        }
-            
-                        if (email === '') {
-                            alert('Prosím, vyplňte emailovú adresu.');
-                            event.preventDefault();
-                            return;
-                        }
-            
-                        if (sprava === '') {
-                            alert('Prosím, vyplňte správu.');
-                            event.preventDefault();
-                            return;
-                        }
-                    });
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelector('#reportForm').addEventListener('submit', function (event) {
+                    var inGameMeno = document.getElementById('exampleInputName').value.trim();
+                    var steamMeno = document.getElementById('exampleInputSteam').value.trim();
+                    var email = document.getElementById('exampleInputEmail1').value.trim();
+                    var dovod = document.getElementById('exampleInputDovod').value.trim();
+                    var sprava = document.getElementById('exampleInputMessage').value.trim();
+        
+                    
+                    if (steamMeno === '') {
+                        document.getElementById('steamError').textContent = 'Prosím, vyplňte Steam meno.';
+                        event.preventDefault();
+                        return;
+                    } else {
+                        document.getElementById('steamError').textContent = '';
+                    }
+        
+                    if (inGameMeno === '') {
+                        alert('Prosím, vyplňte In-game meno.');
+                        event.preventDefault();
+                        return;
+                    }
+        
+                    if (email === '') {
+                        alert('Prosím, vyplňte emailovú adresu.');
+                        event.preventDefault();
+                        return;
+                    }
+        
+                    if (dovod === '') {
+                        alert('Prosím, vyberte dôvod nahlásenia.');
+                        event.preventDefault();
+                        return;
+                    }
+        
+                    if (sprava === '') {
+                        alert('Prosím, vyplňte správu.');
+                        event.preventDefault();
+                        return;
+                    }
                 });
-            </script>
-
-
+            });
+        </script>
 
           <!--Site specific content ends here-->
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
