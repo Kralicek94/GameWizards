@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kontakty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://kralicek94.github.io/GameWizards/pics/GameWizards2.png">
+</head>
+
+<body>
+
+    <section id="contact">
+        <h2>Kontaktuje nás</h2>
+    
+        <form action="#">
+            <div class="input-box field">
+                <input type="text" placeholder="Celé meno" id="meno" class="item" autocomplete="off">
+                <div class="error-txt">Celé meno nesmie byť prázdne.</div>
+            </div>
+    
+            <div class="input-box field">
+                <input type="text" placeholder="Emailová adresa" id="email" class="item" autocomplete="off">
+                <div class="error-txt">Emailová adresa nesmie byť prázdna.</div>
+            </div>
+    
+            <div class="input-box field">
+                <input type="text" placeholder="Telefónne číslo" id="telefon" class="item" autocomplete="off">
+                <div class="error-txt">Telefónne číslo nesmie byť prázdne.</div>
+            </div>
+    
+            <div class="input-box field">
+                <input type="text" placeholder="Vec" id="vec" class="item" autocomplete="off">
+                <div class="error-txt">Vec nesmie byť prázdna.</div>
+            </div>
+    
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Vaša správa" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Vaša správa nesmie byť prázdna.</div>
+            </div>
+    
+            <button type="submit">Pošli správu</button>
+        </form>
+    </section>
+    
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="kontakt.js"></script>
+</body>
+</html>
+
