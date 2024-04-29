@@ -121,6 +121,28 @@
                       <h1 class="text-center text-warning">Kontakt na Adminov</h1>
                       <p>Pokiaľ chcete niekoho nahlásiť tak kliknite na <span class="text-info">Kontakt</span>, na päte stránky.</p>
                       <br>
+                      <h1 class="text-center text-danger">Nahlasovanie porušenia pravidiel</h1>
+                      <div class="container rounded p-2" style="width: 50%; border: black solid 2px; background-color: rgb(100, 100, 100)">
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Minecraft Nickname nahlasovaného hráča">
+                            </div>
+                            <div class="input-group mb-3 justify-content-center">
+                                <select id="offence-list">
+                                    <option>-- Typ porušenia pravidiel --</option>
+                                    <option> Neslušný chat </option>
+                                    <option> Nepovolené klient módy </option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Váš E-Mail">
+                            </div>
+                            <div class="input-group mb-3 justify-content-center">
+                                <button type="submit" class="btn btn-default" style="border: black 2px solid; background-color:antiquewhite;">Odoslať</button>
+                            </div>
+                        </form>
+                        </div>
+                        <br>
                     </div>
               </div>   
           </div>
@@ -155,6 +177,6 @@
             </div>
         <div id="copyright">&copy; 2024 WebWizards. All Rights Reserved.</div>
     </footer>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       </body>
   </html>
